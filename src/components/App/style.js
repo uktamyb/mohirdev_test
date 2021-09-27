@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import BG from "../../img/top-background.svg";
+import bgTop from "../../Assets/img/top-background.svg";
 
 export const Container = styled.div`
-  border: 1px solid green;
   width: 1440px;
   height: 7354px;
-`;
-
-export const BG = styled.img`
-  width: 4019px;
-  height: 3203px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  background-image: url(${bgTop});
+  background-repeat: no-repeat;
+  background-position: 0% 2%;
+  background-color: #fff;
 `;
