@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 64px 0 0 0;
+  margin: 191.56px 0 0 0;
   align-items: center;
   width: 100%;
   height: 1000px;
@@ -99,13 +99,48 @@ const innerBoxesType = (grid) => {
 
 export const InnerBoxes = styled.div`
   display: flex;
+  position: relative;
   cursor: pointer;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 14.34px;
   background: #fff;
   border-radius: 40px;
   color: #000;
   grid-column: ${({ grid }) => innerBoxesType(grid)};
+`;
+
+export const Span = styled.span`
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  font-weight: 600;
+  font-size: 15px;
+`;
+export const InnerH1 = styled.h1`
+  display: flex;
+  font-weight: bold;
+`;
+export const InnerH5 = styled.h5`
+  display: flex;
+  color: #34d08c;
+`;
+export const InnerP = styled.p`
+  display: flex;
+  font-size: 8px;
+  font-weight: 100;
+  color: #949292;
+`;
+
+export const LeadsBoxes = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 153px;
+  height: 155px;
+  margin: 20px 0 0 0;
+  padding: 0;
 `;
 
 export const InnerBoxeSeven = styled.div`
@@ -122,4 +157,59 @@ export const InnerBoxeSeven = styled.div`
 export const Customer = styled.div`
   width: 472px;
   height: 160px;
+`;
+
+const imagesTop = (top) => {
+  switch (top) {
+    case "facebook":
+      return "25%";
+    case "blue":
+      return "2%";
+    case "chart":
+      return "55%";
+    case "girl":
+      return "12%";
+    case "green":
+      return "20%";
+    case "man":
+      return "40%";
+    case "qb":
+      return "35%";
+    default:
+      return "unset";
+  }
+};
+const imagesLeft = (left) => {
+  switch (left) {
+    case "facebook":
+      return "5%";
+    case "blue":
+      return "-150px";
+    case "chart":
+      return "-5%";
+    case "girl":
+      return "90%";
+    case "green":
+      return "1230px";
+    case "man":
+      return "-2%";
+    case "qb":
+      return "92%";
+    default:
+      return "unset";
+  }
+};
+
+export const ImageIcon = styled.div`
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  top: ${({ top }) => imagesTop(top)};
+  left: ${({ left }) => imagesLeft(left)};
+  right: 0%;
+  background: #ffffff;
+  box-shadow: 0px 44px 44px rgba(33, 38, 79, 0.2);
 `;

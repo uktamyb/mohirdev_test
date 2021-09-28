@@ -5,27 +5,28 @@ import { Container } from "./style";
 import Header from "../components/Header";
 import ContentFirst from "../components/Content/ContentFirst";
 import ContentSecond from "../components/Content/ContentSecond";
-// import ContentThird from "../Content";
-// import ContentFourth from "../Content";
-// import ContentFifth from "../Content";
-// import ContentSixth from "../Content";
+import ContentThird from "../components/Content/ContentThird";
+import ContentFourth from "../components/Content/ContentFourth";
+import ContentFifth from "../components/Content/ContentFifth";
+import ContentSixth from "../components/Content/ContentSixth";
 
 export const App = () => {
   return (
     <Router>
       <Container>
+        {/* <BgImg src={bgTop} slt="alt" /> */}
         <Header />
         <ContentFirst />
         {/* margin top: 191px */}
         <ContentSecond />
         {/* 369.5px */}
-        {/* <ContentThird /> */}
+        <ContentThird />
         {/* 228px */}
-        {/* <ContentFourth /> */}
+        <ContentFourth />
         {/* 252px */}
-        {/* <ContentFifth /> */}
+        <ContentFifth />
         {/* 252px */}
-        {/* <ContentSixth /> */}
+        <ContentSixth />
         {/* 192px */}
       </Container>
     </Router>
