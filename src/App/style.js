@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bgTop from "../../Assets/img/top-background.svg";
+import bgTop from "../Assets/img/top-background.svg";
 
 export const Container = styled.div`
   width: 1440px;
