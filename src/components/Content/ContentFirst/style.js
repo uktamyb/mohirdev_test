@@ -13,7 +13,6 @@ export const ContainerWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: fit-content;
-  border: 1px solid green;
 `;
 
 export const Wrapper = styled.div`
