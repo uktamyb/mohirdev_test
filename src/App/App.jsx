@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Container } from "./style";
+import "../index.css";
 
 import Header from "../components/Header";
 import ContentFirst from "../components/Content/ContentFirst";
@@ -9,12 +10,12 @@ import ContentThird from "../components/Content/ContentThird";
 import ContentFourth from "../components/Content/ContentFourth";
 import ContentFifth from "../components/Content/ContentFifth";
 import ContentSixth from "../components/Content/ContentSixth";
+import Footer from "../components/Footer/index";
 
 export const App = () => {
   return (
     <Router>
       <Container>
-        {/* <BgImg src={bgTop} slt="alt" /> */}
         <Header />
         <ContentFirst />
         {/* margin top: 191px */}
@@ -28,6 +29,7 @@ export const App = () => {
         {/* 252px */}
         <ContentSixth />
         {/* 192px */}
+        <Footer />
       </Container>
     </Router>
   );

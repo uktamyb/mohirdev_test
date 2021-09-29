@@ -8,14 +8,12 @@ import {
   TopImg
 } from "./style";
 import Top from "../../../Assets/img/Third/top.svg";
-import BackTop from "../../../Assets/img/Third/top2.svg";
 
 export const ContentThird = () => {
   return (
     <Container>
       <Wrapper>
-        <TopImg src={BackTop} alt="alt" />
-        <TopImg src={Top} alt="alt" />
+        <TopImg src={Top} alt="" />
       </Wrapper>
       <WrapperData>
         <WrapperH1>Pull yourself out of the spreadsheet haze</WrapperH1>

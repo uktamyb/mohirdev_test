@@ -6,15 +6,15 @@ import {
   SecondP,
   SecondData,
   SecondStatistics,
-  StatisticsInnerBox,
-  InnerBoxes,
-  InnerBoxeSeven,
-  ImageIcon,
-  Span,
-  InnerH1,
-  InnerH5,
-  InnerP,
-  LeadsBoxes
+  // StatisticsInnerBox,
+  // InnerBoxes,
+  // InnerBoxeSeven,
+  ImageIcon
+  // Span,
+  // InnerH1,
+  // InnerH5,
+  // InnerP,
+  // LeadsBoxes
 } from "./style";
 
 import { ReactComponent as Facebook } from "../../../Assets/img/Second/facebook-icon.svg";
@@ -24,15 +24,17 @@ import { ReactComponent as Girl } from "../../../Assets/img/Second/girl.svg";
 import { ReactComponent as Green } from "../../../Assets/img/Second/green.svg";
 import { ReactComponent as Man } from "../../../Assets/img/Second/man1.svg";
 import { ReactComponent as Qb } from "../../../Assets/img/Second/icons8-qbittorrent.svg";
-import { ReactComponent as BlueBox } from "../../../Assets/img/Second/LeadsBoxes/blue.svg";
-import { ReactComponent as LightBlue } from "../../../Assets/img/Second/LeadsBoxes/lightBluer.svg";
-import { ReactComponent as DarkBlue } from "../../../Assets/img/Second/LeadsBoxes/darkBlue.svg";
-import { ReactComponent as WhiteBox } from "../../../Assets/img/Second/LeadsBoxes/WhiteBox.svg";
-import { ReactComponent as DarkerBlue } from "../../../Assets/img/Second/LeadsBoxes/darkerBlue.svg";
-import { ReactComponent as Black } from "../../../Assets/img/Second/LeadsBoxes/black.svg";
-import { ReactComponent as CustomerAquisition } from "../../../Assets/img/Second/CustomerAquisition.svg";
-import { ReactComponent as CustomerRetension } from "../../../Assets/img/Second/CustomerRetension.svg";
-import { ReactComponent as MRR } from "../../../Assets/img/Second/MRR.svg";
+import StatisticsBox from "../../../Assets/img/Second/whiteBoard.svg";
+
+// import { ReactComponent as BlueBox } from "../../../Assets/img/Second/LeadsBoxes/blue.svg";
+// import { ReactComponent as LightBlue } from "../../../Assets/img/Second/LeadsBoxes/lightBluer.svg";
+// import { ReactComponent as DarkBlue } from "../../../Assets/img/Second/LeadsBoxes/darkBlue.svg";
+// import { ReactComponent as WhiteBox } from "../../../Assets/img/Second/LeadsBoxes/WhiteBox.svg";
+// import { ReactComponent as DarkerBlue } from "../../../Assets/img/Second/LeadsBoxes/darkerBlue.svg";
+// import { ReactComponent as Black } from "../../../Assets/img/Second/LeadsBoxes/black.svg";
+// import { ReactComponent as CustomerAquisition } from "../../../Assets/img/Second/CustomerAquisition.svg";
+// import { ReactComponent as CustomerRetension } from "../../../Assets/img/Second/CustomerRetension.svg";
+// import { ReactComponent as MRR } from "../../../Assets/img/Second/MRR.svg";
 
 export const ContentSecond = () => {
   return (
@@ -48,7 +50,8 @@ export const ContentSecond = () => {
           </SecondP>
         </SecondData>
         <SecondStatistics>
-          <StatisticsInnerBox>
+          <img src={StatisticsBox} alt="alt" />
+          {/* <StatisticsInnerBox>
             <InnerBoxes grid="one">
               <Span>MRR YTD</Span>
               <InnerH1> $25,215</InnerH1>
@@ -90,7 +93,7 @@ export const ContentSecond = () => {
             <InnerBoxeSeven>
               <MRR />
             </InnerBoxeSeven>
-          </StatisticsInnerBox>
+          </StatisticsInnerBox> */}
         </SecondStatistics>
         <ImageIcon top="facebook" left="facebook">
           <Facebook />

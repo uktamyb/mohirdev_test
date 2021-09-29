@@ -13,14 +13,16 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  position: relative;
   width: 100%;
-  height: 536.66px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 66px;
 `;
 
 export const TopImg = styled.img`
-  position: absolute;
+  width: 1400px;
 `;
 
 export const WrapperData = styled.div`
